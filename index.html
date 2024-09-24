@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Aggregator</title>
+    <style>
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clothing Items</h1>
+    <div id="items"></div>
+
+    <script>
+        fetch('/api/items')
+            .then(response => response.json())
+            .then(data => {
+                const itemsContainer = document.getElementById('items');
+                data.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'item';
+                    itemDiv.innerHTML = `<h2>${item.title}</h2><p>${item.price}</p><a href="${item.link}">View</a>`;
+                    itemsContainer.appendChild(itemDiv);
+                });
+            });
+    </script>
+</body>
+</html>
