@@ -1,4 +1,5 @@
-<h1> WEB SCRAPER FOR MULTUPLE E-COMMERCE SITES TO ONE</h1>
+<h1> Web Scraper For Multiple E-Commerce Clothing Items into 1 Site</h1>
 
-<BODY> Using beautiful soup to get html</BODY>
-<li>then parse html to show on front end</li>
+<l1> Using beautiful soup to get html</li>
+<li> Then parse html to show on front end</li>
+<li> Goal: Ease of comparing mutiple clothing from different brands to one </li>
